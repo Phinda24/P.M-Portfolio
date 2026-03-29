@@ -1,0 +1,324 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phinda Mpho — .NET Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">PM.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="DownloadCV"
+           style="padding:0.6rem 1.2rem; font-size:0.75rem;">
+            Download CV
+        </a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="container hero-content">
+            <div class="hero-tag">Available for opportunities</div>
+            <h1>
+                <span class="h1-dim">Hi, I'm</span><br>
+                Phinda<br>
+                <span class="h1-accent">Mpho</span>
+            </h1>
+            <p class="hero-sub">
+                <strong>Junior C# / .NET Developer / Flutter Developer</strong> building scalable web and mobile applications using
+                <strong>ASP.NET</strong>, <strong>Firebase for authentication and firestore for storage</strong>, and <strong>Flutter and Dart</strong>.
+                Focused on solving real business problems through clean, efficient code.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-num">2+</div>
+                    <div class="stat-label">Production Systems</div>
+                </div>
+                <div>
+                    <div class="stat-num">5+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div>
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Committed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual fade-up">
+                    <div class="about-card">
+                        <div class="about-code">
+                            <div><span class="code-punc">{</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-key">"name"</span><span class="code-punc">:</span> <span class="code-str">"Phinda Mpho"</span><span class="code-punc">,</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-key">"role"</span><span class="code-punc">:</span> <span class="code-str">"Junior .NET Developer"</span><span class="code-punc">,</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-key">"stack"</span><span class="code-punc">:</span> <span class="code-punc">[</span></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"C#"</span><span class="code-punc">,</span> <span class="code-str">"ASP.NET MVC"</span><span class="code-punc">,</span></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"Firebase"</span><span class="code-punc">,</span> <span class="code-str">"Flutter"</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-punc">],</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-key">"available"</span><span class="code-punc">:</span> <span class="code-str" style="color:#00e5a0">true</span><span class="code-punc">,</span></div>
+                            <div>&nbsp;&nbsp;<span class="code-key">"passion"</span><span class="code-punc">:</span> <span class="code-str">"Real-world solutions"</span></div>
+                            <div><span class="code-punc">}</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text fade-up">
+                    <div class="section-eyebrow">About Me</div>
+                    <h2 class="section-title">Building systems that<br>actually work</h2>
+                    <p>
+                        I am a software developer specialising in <strong>C# and ASP.NET</strong>, with hands-on experience building full-stack applications connected to real-time databases.
+                    </p>
+                    <p>
+                        I have developed systems such as a <strong>Leave Management System</strong> and an <strong>HR Management System</strong>, handling authentication, multi-role workflows, and role-based access control.
+                    </p>
+                    <p>
+                        I'm passionate about building practical, maintainable solutions and continuously sharpening my skills in modern software development.
+                    </p>
+                    <a href="#projects" class="btn btn-outline" style="margin-top:1rem;">See My Work →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-eyebrow">Projects</div>
+            <h2 class="section-title">Systems I've built</h2>
+            <p style="color:var(--muted); max-width:520px;">Real applications handling real workflows — authentication, approvals, and live data.</p>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-screenshot slider-wrap" id="slider1">
+                        <div class="slides">
+                            <img src="https://github.com/user-attachments/assets/81b362ae-6eba-4025-b637-127a39170cc7" alt="Leave System - Employee Dashboard" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/53449f48-199a-4edf-9806-78924016e09d" alt="Leave System - HOD Dashboard" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/ce458605-29b0-4f84-9569-c3c20fb4820b" alt="Leave System - Supervisor Dashboard" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/be395d11-135b-4e2f-9818-4fd3cbfa75ce" alt="Leave System - Apply for Leave" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/1c4c575b-fd84-418e-87fc-5cab65119fa4" alt="Leave System - HOD Requests" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/fa9d69d7-9de8-4d29-aad9-cd0c7a65b67f" alt="Leave System - Supervisor Requests" loading="lazy" />
+                        </div>
+                        <button class="slide-btn prev" onclick="slide('slider1',-1)">&#8249;</button>
+                        <button class="slide-btn next" onclick="slide('slider1',1)">&#8250;</button>
+                        <div class="slide-dots" id="dots1"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-num">01 — Featured Project</div>
+                        <div class="project-title">Leave Management System</div>
+                        <p class="project-desc">
+                            A full-stack leave management system with <strong>role-based workflows</strong> for employees, supervisors, and HODs — managing the complete approval lifecycle with real-time database updates.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Apply for leave</li>
+                            <li>Approve / reject workflow</li>
+                            <li>Firebase authentication</li>
+                            <li>Firestore database</li>
+                            <li>Dashboard analytics</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag tag-green">C#</span>
+                            <span class="tag tag-green">ASP.NET MVC</span>
+                            <span class="tag tag-red">Firebase</span>
+                            <span class="tag tag-red">Firestore</span>
+                            <span class="tag tag-purple">Flutter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Phinda24/Leave-Management-System" class="link-btn link-github">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                                GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up">
+                    <div class="project-screenshot slider-wrap" id="slider2">
+                        <div class="slides">
+                            <img src="https://github.com/user-attachments/assets/eefc3af0-165a-43e5-bae1-b0b2a54c46a7" alt="HR System - Login" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/eb55d621-3715-42db-ac82-fe520985b9de" alt="HR System - Admin Dashboard" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/ba4567e2-714c-4e3f-bc68-e93498e852cf" alt="HR System - Employees" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/811da12b-e4a7-4bd2-8f65-d00026aaaacc" alt="HR System - Payroll" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/8f68bd71-e49f-46af-92da-8af955b9ac72" alt="HR System - Departments" loading="lazy" />
+                            <img src="https://github.com/user-attachments/assets/3175f749-2e46-40f3-8d7c-b53c125f7dc1" alt="HR System - Add User" loading="lazy" />
+                        </div>
+                        <button class="slide-btn prev" onclick="slide('slider2',-1)">&#8249;</button>
+                        <button class="slide-btn next" onclick="slide('slider2',1)">&#8250;</button>
+                        <div class="slide-dots" id="dots2"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-num">02 — Featured Project</div>
+                        <div class="project-title">HR Management System</div>
+                        <p class="project-desc">
+                            A comprehensive HR management platform enabling <strong>full employee lifecycle management</strong> — from onboarding to records management — with authentication and structured database relationships.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Employee management</li>
+                            <li>Full CRUD operations</li>
+                            <li>Authentication system</li>
+                            <li>Database relationships</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag tag-green">C#</span>
+                            <span class="tag tag-green">ASP.NET MVC</span>
+                            <span class="tag tag-purple">.NET Core</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Phinda24/HRManagementSystem" class="link-btn link-github">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                                GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-eyebrow">Skills</div>
+            <h2 class="section-title">Tech stack</h2>
+            <div class="skills-grid">
+
+                <div class="skill-group fade-up">
+                    <div class="skill-group-title">Languages</div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group fade-up">
+                    <div class="skill-group-title">Frameworks</div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">ASP.NET MVC</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">.NET Core</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group fade-up">
+                    <div class="skill-group-title">Tools & Services</div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Firebase Auth</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Firestore</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group fade-up">
+                    <div class="skill-group-title">Concepts</div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">OOP</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MVC Architecture</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-eyebrow">Contact</div>
+            <h2 class="section-title">Let's work together</h2>
+            <div class="contact-inner fade-up">
+                <div class="contact-title">Open to opportunities</div>
+                <p class="contact-sub">Whether you have a role in mind or just want to connect — reach out. I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a href="mailto:mphophinda78@gmail.com" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+                        Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/phinda-mpho-35844a309/" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" /></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Phinda24" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" /></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & built by <span>Phinda Mpho</span> · 2025</p>
+    </footer>
+
+
+</body>
+</html>
+
